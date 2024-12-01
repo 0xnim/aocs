@@ -3,9 +3,6 @@ name = "aocs"
 version = "0.1.0"
 edition = "2021"
 
-[lib]
-bench = false
-
 [dependencies]
 rust-crypto = "0.2.36"
 aoc-runner = "0.3.0"
