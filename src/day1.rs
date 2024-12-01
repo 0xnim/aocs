@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+#[aoc(day1, part1)]
 pub fn part_one(input: &str) -> u32 {
     // TODO: Implement part one
 
@@ -25,6 +26,7 @@ pub fn part_one(input: &str) -> u32 {
     sum as u32
 }
 
+#[aoc(day1, part2)]
 pub fn part_two(input: &str) -> u32 {
     // TODO: Implement part one
 
