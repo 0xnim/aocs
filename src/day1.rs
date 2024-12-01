@@ -2,8 +2,6 @@ use std::collections::HashMap;
 
 #[aoc(day1, part1)]
 pub fn part_one(input: &str) -> u32 {
-    // TODO: Implement part one
-
     let mut first_column: Vec<i32> = Vec::new();
     let mut second_column: Vec<i32> = Vec::new();
 
@@ -28,22 +26,16 @@ pub fn part_one(input: &str) -> u32 {
 
 #[aoc(day1, part2)]
 pub fn part_two(input: &str) -> u32 {
-    // TODO: Implement part one
-
     let mut first_column: Vec<i32> = Vec::new();
-    let mut second_column: Vec<i32> = Vec::new();
+    let mut frequency_map: HashMap<i32, i32> = HashMap::new();
 
     for line in input.lines() {
         let mut split_line = line.split_whitespace();
         let first = split_line.next().unwrap().parse::<i32>().unwrap();
         let second = split_line.next().unwrap().parse::<i32>().unwrap();
         first_column.push(first);
-        second_column.push(second);
-    }
 
-    let mut frequency_map: HashMap<i32, i32> = HashMap::new();
-    for &value in &second_column {
-        *frequency_map.entry(value).or_insert(0) += 1;
+        *frequency_map.entry(second).or_insert(0) += 1;
     }
 
     let mut total_score: i32 = 0;
