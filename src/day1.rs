@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-pub fn part_one(input: &str) -> Option<u32> {
+pub fn part_one(input: &str) -> u32 {
     // TODO: Implement part one
 
     let mut first_column: Vec<i32> = Vec::new();
@@ -22,10 +22,10 @@ pub fn part_one(input: &str) -> Option<u32> {
         sum += (first_column[i] - second_column[i]).abs() as i32;
     }
 
-    Some(sum as u32)
+    sum as u32
 }
 
-pub fn part_two(input: &str) -> Option<u32> {
+pub fn part_two(input: &str) -> u32 {
     // TODO: Implement part one
 
     let mut first_column: Vec<i32> = Vec::new();
@@ -51,5 +51,5 @@ pub fn part_two(input: &str) -> Option<u32> {
         }
     }
 
-    Some(total_score as u32)
+    total_score as u32
 }
