@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 #[aoc(day1, part1)]
-pub fn part_one(input: &str) -> u32 {
+pub fn part1(input: &str) -> u32 {
     let mut first_column: Vec<i32> = Vec::new();
     let mut second_column: Vec<i32> = Vec::new();
 
@@ -25,7 +25,7 @@ pub fn part_one(input: &str) -> u32 {
 }
 
 #[aoc(day1, part2)]
-pub fn part_two(input: &str) -> u32 {
+pub fn part2(input: &str) -> u32 {
     let mut first_column: Vec<i32> = Vec::new();
     let mut frequency_map: HashMap<i32, i32> = HashMap::new();
 
