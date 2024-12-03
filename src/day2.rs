@@ -34,7 +34,7 @@ impl Report {
 }
 
 #[aoc(day2, part1)]
-pub fn part_one(input: &str) -> u32 {
+pub fn part1(input: &str) -> u32 {
     input
         .par_lines() // Use rayon's parallel iterator for lines
         .map(Report::new) // Convert each line to a Report
@@ -45,7 +45,7 @@ pub fn part_one(input: &str) -> u32 {
 
 
 /*#[aoc(day2, part2)]
-pub fn part_two(input: &str) -> u32 {
+pub fn part2(input: &str) -> u32 {
     0
     /// TODO: redo
 }*/
